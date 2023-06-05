@@ -1,0 +1,145 @@
+#upload {
+    opacity: 0;
+}
+
+#upload-label {
+    position: absolute;
+    top: 50%;
+    left: 1rem;
+    transform: translateY(-50%);
+}
+
+.container {
+    max-width: 100% !important;
+}
+
+.image-area {
+    border: 2px dashed rgba(255, 255, 255, 0.7);
+    padding: 4rem;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.image-area::before {
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 0.8rem;
+    z-index: 1;
+}
+
+.image-area img {
+    z-index: 2;
+    position: relative;
+}
+
+.progress-percent {
+    color: #000;
+    font-size: 23px;
+    text-align: center;
+}
+
+.error-message {
+    text-align: center;
+    font-size: 25px;
+}
+
+.image-preview {
+    display: block;
+    width: auto;
+}
+
+.image-row {
+    display: block;
+    width: auto;
+    height: 21px;
+    clear: both;
+}
+
+.image-cell {
+    display: inline-block;
+    border: solid 2px rgba(255, 255, 255, 0.4);
+    height: 20px;
+}
+
+.image-cell-negative {
+    border: solid 2px rgba(0, 255, 0, 0.4) !important;
+}
+
+.image-cell-positive {
+    border: solid 2px rgba(255, 0, 0, 0.4) !important;
+}
+
+.image-cell img {
+    vertical-align: top !important;
+}
+
+.popup-image {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: visible;
+    opacity: 1;
+    z-index: 5;
+}
+
+.popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 400px;
+    position: relative;
+    transition: all 5s ease-in-out;
+    z-index: 6;
+}
+
+.popup h2 {
+    margin-top: 0;
+    color: #333;
+    font-family: Tahoma, Arial, sans-serif;
+}
+
+.popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+.popup .close:hover {
+    color: #b506d8;
+}
+
+.popup .content {
+    max-height: 30%;
+    overflow: auto;
+}
+
+.spinner-border {
+    margin-top: 5px;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #757f9a;
+    background-image: linear-gradient(147deg, #9b5de5 0%, #f15bb5 100%);
+}
